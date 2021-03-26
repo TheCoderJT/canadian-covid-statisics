@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/canadian-covid-statisics/static/css/main.2aed3a53.chunk.css",
-    "main.js": "/canadian-covid-statisics/static/js/main.d8ec54fa.chunk.js",
-    "main.js.map": "/canadian-covid-statisics/static/js/main.d8ec54fa.chunk.js.map",
+    "main.css": "/canadian-covid-statisics/static/css/main.5ccfd93a.chunk.css",
+    "main.js": "/canadian-covid-statisics/static/js/main.233e2874.chunk.js",
+    "main.js.map": "/canadian-covid-statisics/static/js/main.233e2874.chunk.js.map",
     "runtime-main.js": "/canadian-covid-statisics/static/js/runtime-main.2008cf35.js",
     "runtime-main.js.map": "/canadian-covid-statisics/static/js/runtime-main.2008cf35.js.map",
-    "static/js/2.a72ca434.chunk.js": "/canadian-covid-statisics/static/js/2.a72ca434.chunk.js",
-    "static/js/2.a72ca434.chunk.js.map": "/canadian-covid-statisics/static/js/2.a72ca434.chunk.js.map",
+    "static/js/2.51cf9786.chunk.js": "/canadian-covid-statisics/static/js/2.51cf9786.chunk.js",
+    "static/js/2.51cf9786.chunk.js.map": "/canadian-covid-statisics/static/js/2.51cf9786.chunk.js.map",
     "index.html": "/canadian-covid-statisics/index.html",
-    "static/css/main.2aed3a53.chunk.css.map": "/canadian-covid-statisics/static/css/main.2aed3a53.chunk.css.map",
-    "static/js/2.a72ca434.chunk.js.LICENSE.txt": "/canadian-covid-statisics/static/js/2.a72ca434.chunk.js.LICENSE.txt"
+    "static/css/main.5ccfd93a.chunk.css.map": "/canadian-covid-statisics/static/css/main.5ccfd93a.chunk.css.map",
+    "static/js/2.51cf9786.chunk.js.LICENSE.txt": "/canadian-covid-statisics/static/js/2.51cf9786.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2008cf35.js",
-    "static/js/2.a72ca434.chunk.js",
-    "static/css/main.2aed3a53.chunk.css",
-    "static/js/main.d8ec54fa.chunk.js"
+    "static/js/2.51cf9786.chunk.js",
+    "static/css/main.5ccfd93a.chunk.css",
+    "static/js/main.233e2874.chunk.js"
   ]
 }
