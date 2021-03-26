@@ -15,6 +15,10 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "2.15em",
   },
 
+  card__heading:{
+    textAlign: "center"
+  },
+
   card_data: {
     fontSize: "1.75em",
     fontFamily: theme.typography.fontFamily,

@@ -15,7 +15,7 @@ const ProvinceCard = ({ provName, totalCases, activeCases, totalDeaths, totalRec
           justify="space-around"
           alignItems="center"
         >
-          <Grid item>
+          <Grid item className={classes.card__heading}>
             <Typography className={classes.card_provName} variant="p">
               {provName}
             </Typography>
