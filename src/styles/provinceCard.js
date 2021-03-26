@@ -3,22 +3,16 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   card: {
     display: "block",
-    margin: "0 auto",
+    margin: "5em auto 10em auto",
     height: "600px",
     maxWidth: "800px",
     backgroundColor: theme.palette.background.paper,
   },
 
   card_provName: {
-    fontSize: "2.25em",
-    fontWeight: "bold",
-  },
-
-  card_provName: {
     fontFamily: "Hind Madurai, sans-serif",
     fontWeight: "bold",
-    fontSize: "2.25em",
-    padding: ".25em 5em",
+    fontSize: "2.15em",
   },
 
   card_data: {
@@ -31,6 +25,10 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1.5em",
     display: "block",
     textAlign: "center",
+  },
+
+  card_date_grid: {
+    marginTop:'1em',
   },
 
   card_dataValues: {

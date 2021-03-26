@@ -17,11 +17,13 @@ const ProvinceCard = ({ provName, totalCases, activeCases, totalDeaths, totalRec
         >
           <Grid item>
             <Typography className={classes.card_provName} variant="p">
-              {provName} 
+              {provName}
             </Typography>
-            <Typography className={classes.card_date} variant="p">
-              Date: {date}
-            </Typography>
+            <Grid item className={classes.card_date_grid}>
+              <Typography className={classes.card_date} variant="p">
+                Date: {date}
+              </Typography>
+            </Grid>
           </Grid>
           <Grid item zeroMinWidth>
             <Typography className={classes.card_data} variant="p">

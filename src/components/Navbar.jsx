@@ -8,13 +8,9 @@ const Navbar = () => {
   return (
     <AppBar className={navBar.appBar} position="static">
       <Toolbar disableGutters className={navBar.toolBar}>
-        <IconButton className={navBar.iconbutton}>
-          <FaCanadianMapleLeaf />
-        </IconButton>
-        <Typography variant="h4">Covid Stats For Canadian Provinces</Typography>
-        <IconButton className={navBar.iconbutton}>
-          <FaCanadianMapleLeaf />
-        </IconButton>
+        <FaCanadianMapleLeaf className={navBar.iconbutton} />
+        <Typography className={navBar.heading} variant="h4">Covid Stats For Canadian Provinces</Typography>
+        <FaCanadianMapleLeaf className={navBar.iconbutton} />
       </Toolbar>
     </AppBar>
   );
