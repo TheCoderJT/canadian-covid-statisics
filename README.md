@@ -1,13 +1,7 @@
 ## First React Personal Project - Version 1
 
-I started my web dev journey about 8 months ago, started with html, css and javascript.
-I then learned about git, npm, node, and api's . I then looked into a frontend framework
-and decided to learn about react read their documentation watched free and paid courses ect.
-
-After being stuck in tutorial hell for so long, decided to come up with an idea and create it myself
-without a tutorial and this is just that. I wanted to use a free public api and integrate it with react
-and display said data of covid-19 in my province.
+Version one: Was a personal project from learning react which can be viewed here https://github.com/potasium56/alberta-covid-numbers. 
 
 ## Version 2
 
-So, took my learning up another notch aka added material ui to add quick functionality like being able to select any province in canada using their autocomplete function and more
+I decided to make a version where you can look at every province covid data using the same public api that was in my first version. I used materialize-ui to do this since it made it easier to hook up a searchable select which is called AutoComplete. 
