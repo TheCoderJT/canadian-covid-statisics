@@ -15,8 +15,8 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "2.15em",
   },
 
-  card__heading:{
-    textAlign: "center"
+  card__heading: {
+    textAlign: "center",
   },
 
   card_data: {
@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   card_date_grid: {
-    marginTop:'1em',
+    marginTop: "1em",
   },
 
   card_dataValues: {
