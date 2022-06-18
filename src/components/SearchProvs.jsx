@@ -19,9 +19,12 @@ const SearchProvs = () => {
 
   useEffect(() => {
     axios
-      .get("https://api.opencovid.ca/summary")
+      .get(
+        "https://api.opencovid.ca/summary?geo=pt&fill=true&version=true&pt_names=canonical&hr_names=hruid&fmt=json"
+      )
       .then((res) => {
-        setData(res.data.summary);
+        setData(res.data.data);
+        console.log("DATA: ", res.data.data);
       })
       .catch((err) => console.error(err.message));
   }, [activeCases, totalCases, totalDeaths, totalRecovered, date]);
@@ -29,12 +32,11 @@ const SearchProvs = () => {
   const handleChange = (e) => {
     setOnChange(true);
     for (let i = 0; i < data.length; i++) {
-      if (data[i].province === e.target.textContent) {
-        setProv(data[i].province);
-        setActiveCases(parseInt(data[i].active_cases).toLocaleString());
-        setTotalCases(parseInt(data[i].cumulative_cases).toLocaleString());
-        setTotalDeaths(parseInt(data[i].cumulative_deaths).toLocaleString());
-        setTotalRecovered(parseInt(data[i].cumulative_recovered).toLocaleString());
+      if (data[i].region === e.target.textContent) {
+        setProv(data[i].region);
+        setActiveCases(parseInt(data[i].cases_daily).toLocaleString());
+        setTotalCases(data[i].cases);
+        setTotalDeaths(parseInt(data[i].deaths).toLocaleString());
         setDate(data[i].date);
       }
     }
@@ -48,7 +50,7 @@ const SearchProvs = () => {
         fullWidth
         onChange={handleChange}
         options={data}
-        getOptionLabel={(option) => option.province}
+        getOptionLabel={(option) => option.region}
         style={{ width: 300 }}
         renderInput={(params) => (
           <TextField {...params} label="Search Provinces" variant="outlined" />
@@ -60,7 +62,6 @@ const SearchProvs = () => {
           totalCases={totalCases}
           activeCases={activeCases}
           totalDeaths={totalDeaths}
-          totalRecovered={totalRecovered}
           date={date}
         />
       )}

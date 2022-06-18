@@ -2,7 +2,13 @@ import React from "react";
 import { Card, CardContent, Typography, Grid } from "@material-ui/core";
 import useStyle from "../styles/provinceCard.js";
 
-const ProvinceCard = ({ provName, totalCases, activeCases, totalDeaths, totalRecovered, date }) => {
+const ProvinceCard = ({
+  provName,
+  totalCases,
+  activeCases,
+  totalDeaths,
+  date,
+}) => {
   const classes = useStyle();
 
   return (
@@ -27,22 +33,20 @@ const ProvinceCard = ({ provName, totalCases, activeCases, totalDeaths, totalRec
           </Grid>
           <Grid item zeroMinWidth>
             <Typography className={classes.card_data} variant="p">
-              Total Cases: <span className={classes.card_dataValues}>{totalCases}</span>
+              Total Cases:{" "}
+              <span className={classes.card_dataValues}>{totalCases}</span>
             </Typography>
           </Grid>
           <Grid item zeroMinWidth>
             <Typography className={classes.card_data} variant="p">
-              Active Cases: <span className={classes.card_dataValues}>{activeCases}</span>
+              Active Cases:{" "}
+              <span className={classes.card_dataValues}>{activeCases}</span>
             </Typography>
           </Grid>
           <Grid item zeroMinWidth>
             <Typography className={classes.card_data} variant="p">
-              Total Deaths: <span className={classes.card_dataValues}>{totalDeaths}</span>
-            </Typography>
-          </Grid>
-          <Grid item zeroMinWidth>
-            <Typography className={classes.card_data} variant="p">
-              Total Recovered: <span className={classes.card_dataValues}>{totalRecovered}</span>
+              Total Deaths:{" "}
+              <span className={classes.card_dataValues}>{totalDeaths}</span>
             </Typography>
           </Grid>
         </Grid>
